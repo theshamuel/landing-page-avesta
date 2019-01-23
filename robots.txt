@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /.gitignore
+Disallow: /.git
+Host: http://avesta-center.com
