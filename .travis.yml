@@ -1,4 +1,4 @@
 script:
-- rsync -r --delete-after -e "ssh -o StrictHostKeyChecking=no" --quiet $TRAVIS_BUILD_DIR $USER:$RSYNC_PASSWORD@$HOST:/home/$USER/landing-page-avesta
+- rsync -r --delete-after -e "ssh -o StrictHostKeyChecking=no" --quiet $TRAVIS_BUILD_DIR $USER:$RSYNC_PASSWORD@$HOST:/home/avestaadmin/landing-page-avesta
 on:
   branch: master
