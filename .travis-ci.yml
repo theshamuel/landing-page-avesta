@@ -1,3 +1,6 @@
+install:
+  - docker --version
+
 deploy:
   provider: script
   skip_cleanup: true
