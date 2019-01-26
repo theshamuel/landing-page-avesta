@@ -1,7 +1,4 @@
-install:
-  - docker --version
-
 script:
-- rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR $USER@$HOST:/home/avestaadmin/landing-page-avesta
+- rsync -r --delete-after -e "ssh -o StrictHostKeyChecking=no" --quiet $TRAVIS_BUILD_DIR $USER@$HOST:/home/avestaadmin/landing-page-avesta
 on:
   branch: master
