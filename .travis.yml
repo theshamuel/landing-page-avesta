@@ -1,5 +1,6 @@
 script:
-- docker run --rm -it -v $(pwd)/deploy:/ansible/playbooks ansible/ansible --version
+- docker build -t ansible-alpine deploy
+- docker run --rm -it -v $(pwd)/deploy:/ansible/playbooks ansible-alpine ansible-playbook --version
 true:
   branch: master
 before_install:
