@@ -1,6 +1,6 @@
 script:
 - docker build -t ansible-alpine deploy
-- docker run --rm -it -v $(pwd)/deploy:/ansible/playbooks ansible-alpine ansible-playbook -i /ansible/playbooks/hosts playbook.yaml
+- docker run --rm -it -v $(pwd)/deploy:/ansible/playbooks ansible-alpine ansible-playbook -i /ansible/playbooks/hosts /ansible/playbooks/playbook.yaml
 true:
   branch: master
 before_install:
