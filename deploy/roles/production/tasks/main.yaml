@@ -1,5 +1,5 @@
 ---
 
-  name: "Ping server"
-  tasks:
+ - name: "Ping server"
+   tasks:
     - ping:
