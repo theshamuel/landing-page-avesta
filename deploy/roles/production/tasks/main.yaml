@@ -1,4 +1,4 @@
 ---
 
-- name: Ping server
-  ping:
+- name: Deploy avesta-center.com
+  shell: (cd /home/avestaadmin/landing-page-avesta && git pull --rebase)
